@@ -67,3 +67,17 @@ symfony serve
 You can access the site on https://localhost:8000
 
 Upon first run, follow the instructions to install to install the dev certificate (if you want or you'll get browser warnings)
+
+## FAQ
+
+### Invalid IRI when submitting API request
+This is usualy because of relation.
+You must referece a child relation in string format
+
+```
+key: "/api/Object/[id]"
+```
+e.g.
+```
+key: "/api/Person/1"
+```
