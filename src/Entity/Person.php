@@ -27,6 +27,11 @@ class Person
      */
     private $email;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=Occupation::class, inversedBy="Person")
+     */
+    private $occupation;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -52,6 +57,18 @@ class Person
     public function setEmail(string $email): self
     {
         $this->email = $email;
+
+        return $this;
+    }
+
+    public function getOccupation(): ?Occupation
+    {
+        return $this->occupation;
+    }
+
+    public function setOccupation(?Occupation $occupation): self
+    {
+        $this->occupation = $occupation;
 
         return $this;
     }
