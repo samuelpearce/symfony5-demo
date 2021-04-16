@@ -50,6 +50,7 @@ Uncomment the line
 ```
 DATABASE_URL="mysql://db_user:db_password@127.0.0.1:3306/db_name?serverVersion=5.7"
 ```
+Note: update serverVersion to your corresponding version. XAMPP reported 10.4.14-MariaDB to me
 
 There is a secrets system which allows you to store secrets in the Git repository (protected by a uncommited private key).
 I don't go into it here but I use it in other projects.
