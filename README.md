@@ -20,7 +20,7 @@ Requirements
 
 I use [XAMPP](https://www.apachefriends.org/download.html), downloading version 7.4.x.
 
-# add user variables
+# Add user variables
 Add `C:\xampp\php` to the PATH
 * Start, search 'edit the system environment variables'
 * "Environment Variables"
@@ -42,8 +42,15 @@ Alternatively, this can be used for an API centric (no templating etc) project
 symfony new symfony5-demo
 ```
 
+## Project settings
 copy `.env` to `.env.local`. To update any project settings, edit `.env.local`. This file is excluded from Git.
 Use .env for default values. Do not store secrets here.
+
+Uncomment the line
+```
+DATABASE_URL="mysql://db_user:db_password@127.0.0.1:3306/db_name?serverVersion=5.7"
+```
+
 There is a secrets system which allows you to store secrets in the Git repository (protected by a uncommited private key).
 I don't go into it here but I use it in other projects.
 
