@@ -18,6 +18,8 @@ Requirements
 * [Symfony CLI](https://symfony.com/download)
 * Local MySQL Database - See XAMPP below
 
+* (Optional) [PHP CS Fixer](https://cs.symfony.com/)
+
 I use [XAMPP](https://www.apachefriends.org/download.html), downloading version 7.4.x.
 
 # Add user variables
