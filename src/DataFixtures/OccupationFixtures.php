@@ -34,8 +34,7 @@ class OccupationFixtures extends Fixture
             "Unemployed",
         ];
 
-        foreach ($list as $item)
-        {
+        foreach ($list as $item) {
             $occupation = new Occupation();
             $occupation->setOccupation($item);
             $manager->persist($occupation);
