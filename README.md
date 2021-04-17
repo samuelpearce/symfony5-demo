@@ -45,10 +45,12 @@ symfony new symfony5-demo
 ```
 
 ## Project settings
-copy `.env` to `.env.local`. To update any project settings, edit `.env.local`. This file is excluded from Git.
-Use .env for default values. Do not store secrets here.
+copy `.env` to `.env.local`. To update any project settings, edit `.env.local`. `.env.local` is excluded in Git.
+Use .env for default values. 
 
-Uncomment the line
+**Do not** store and commit secrets in `.env` other than default, generic values. 
+
+In `.env.local`, uncomment the line and set the username, password and db name accordingly.
 ```
 DATABASE_URL="mysql://db_user:db_password@127.0.0.1:3306/db_name?serverVersion=5.7"
 ```
